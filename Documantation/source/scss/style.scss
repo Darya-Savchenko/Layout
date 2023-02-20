@@ -1,0 +1,142 @@
+//import
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import "nullStyle";
+@import "variables";
+@import "mixins";
+
+//body
+.wrapper{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  @include tablet{
+    height: auto;
+    position: static;
+  }
+}
+
+//navigation
+.navigation{
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: $background;
+  border-right: 3px solid $darkgrey;
+  @include tablet{
+    width: 100%;
+    border-right: none;
+  }
+  .title{
+    font-weight: 500;
+    font-size: 35px;
+    padding: 15px;
+    @include laptop{
+      font-size: 25px;
+      padding: 10px;
+    }
+    @include tablet{
+      text-align: center;
+    }
+    @include phone{
+      font-size: 20px;
+    }
+  }
+  .navigation__item{
+    font-weight: 400;
+    font-size: 25px;
+    padding: 15px;
+    border-top: 1px solid $darkgrey;
+    @include tablet{
+      text-align: center;
+    }
+    @include phone{
+      font-size: 18px;
+    }
+    .navigation__link{
+      color: black;
+      &:hover{
+        color: $darkgrey;
+      }
+      &:active{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//content
+.content__container{
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  overflow-y: scroll;
+  @include tablet{
+    width: 100%;
+    height: auto;
+    top: auto;
+    right: auto;
+  }
+  .title__property{
+    font-weight: 600;
+    font-size: 27px;
+    padding-bottom: 15px;
+    @include phone{
+      font-size: 20px;
+      padding-bottom: 10px;
+    }
+  }
+  .title__option{
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 15px;
+    @include phone{
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+  }
+  .item__definition{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    span{
+      padding: 2px;
+      color: $red;
+      background-color: $span;
+    }
+  }
+  .syntax__container{
+    display: flex;
+  }
+  .item__syntax{
+      font-weight: 200;
+      padding: 7px;
+      margin-bottom: 10px;
+      border: 1px solid $darkgrey;
+  }
+  table {
+    border: 1px solid $background;  /* граница всей таблицы */
+    margin-bottom: 15px;
+    .table__tr:nth-child(even) {
+      background-color: $background;
+    }
+    .table__value{
+      padding: 10px;
+    }
+    th{
+      text-align: start;
+      padding-left: 10px;
+    }
+  }
+}
+
+
+
+
+
+

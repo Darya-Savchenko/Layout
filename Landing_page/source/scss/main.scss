@@ -1,0 +1,80 @@
+//main
+.main__container {
+  background: linear-gradient(to bottom, lighten($blue, 35%), #FFFFFF);
+  box-shadow: 0 4px 5px 0 $mainShadow;
+  padding: 40px 20px;
+  border-bottom: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  @include tablet {
+    padding: 20px 15px;
+  }
+
+  .main__content {
+    padding-right: 32px;
+    max-width: 636px;
+    @include laptop {
+      max-width: 436px;
+    }
+    @include tablet {
+      max-width: 300px;
+    }
+    @include phone {
+      max-width: 100%;
+    }
+
+    .main__title {
+      padding-bottom: 14px;
+      font-weight: 500;
+      font-size: 50px;
+      line-height: 1.4;
+      @include laptop {
+        font-size: 40px;
+      }
+      @include tablet {
+        font-size: 30px;
+      }
+      @include phone {
+        font-size: 20px;
+      }
+    }
+
+    .main__text {
+      font-size: 20px;
+      line-height: 1.8;
+      @include tablet {
+        font-size: 17px;
+      }
+    }
+
+    .main__apps {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-top: 60px;
+      @include laptop {
+        padding-top: 30px;
+      }
+
+      .apps-main__item {
+        margin-right: 20px;
+
+        & img {
+          margin-bottom: 15px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .main__decor {
+    @include phone {
+      display: none;
+    }
+
+    & img {
+      max-width: 100%;
+    }
+  }
+}

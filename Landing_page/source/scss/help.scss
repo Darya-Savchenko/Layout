@@ -1,0 +1,195 @@
+//help
+.help__container {
+  height: 1700px;
+  @media screen and (max-width: 1300px) {
+    height: 2500px;
+  }
+  @include phone {
+    height: 2300px;
+  }
+}
+
+.help__decor-top {
+  position: absolute;
+  right: 0;
+  @include phone {
+    display: none;
+  }
+}
+
+.help__decor-bottom {
+  position: relative;
+  top: 1008px;
+  @media screen and (max-width: 1300px) {
+    top: -146px;
+  }
+  @include tablet {
+    top: 165px;
+  }
+  @include phone {
+    display: none;
+  }
+}
+
+.help__columns {
+  display: flex;
+  flex-direction: row;
+  padding-top: 150px;
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  .help__column-right {
+    width: 50%;
+    @media screen and (max-width: 1300px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .help__column-left {
+    width: 50%;
+    @media screen and (max-width: 1300px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .help__title {
+    font-weight: 500;
+    font-size: 36px;
+    padding-bottom: 170px;
+    text-align: start;
+    align-items: center;
+    max-width: 395px;
+    margin-left: 20%;
+    @media screen and (max-width: 1300px) {
+      margin-left: 15px;
+    }
+    @include tablet {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.help__item {
+  max-width: 380px;
+  display: grid;
+  justify-items: start;
+  text-align: start;
+  padding: 48px;
+  margin-bottom: 113px;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px $helpShadow;
+  z-index: 2;
+  background-color: white;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width: 1300px) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .help-item__title {
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 16px;
+    padding-top: 50px;
+  }
+
+  .help-item__text {
+    font-size: 16px;
+    padding-bottom: 62px;
+  }
+
+  .help-item__link {
+    color: $blue;
+    font-weight: 500;
+    font-size: 14px;
+
+    &:hover {
+      color: $fontColor;
+    }
+
+    & img {
+      padding-top: 4px;
+      padding-left: 19px;
+    }
+  }
+}
+
+.receive__container {
+  position: relative;
+
+  .help__receive {
+    position: absolute;
+    top: 45px;
+    left: 42%;
+    @media screen and (max-width: 1300px) {
+      position: static;
+    }
+  }
+
+  .receive__decor {
+    position: absolute;
+    top: 200px;
+    left: 30%;
+    opacity: 0.8;
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+  }
+}
+
+.send__container {
+  position: relative;
+
+  .help__send {
+    position: absolute;
+    top: 80px;
+    right: 30%;
+    @media screen and (max-width: 1300px) {
+      position: static;
+    }
+  }
+
+  .send__decor {
+    position: absolute;
+    top: 9px;
+    right: 20%;
+    opacity: 0.8;
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+  }
+}
+
+.buy__container {
+  position: relative;
+
+  .help__buy {
+    position: absolute;
+    top: 800px;
+    right: 30%;
+    @media screen and (max-width: 1300px) {
+      position: static;
+    }
+  }
+
+  .buy__decor {
+    position: absolute;
+    top: 1224px;
+    left: 14%;
+    opacity: 0.8;
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+  }
+}

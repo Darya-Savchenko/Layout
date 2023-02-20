@@ -1,0 +1,32 @@
+%bind-next-button {
+  content: "〉";
+  font-weight: 700;
+  font-size: 2em;
+  display: block;
+  color: $blue;
+  padding-left: 15px;
+  &:hover{
+    color: white;
+  }
+}
+%bind-prev-button {
+  content: "〈";
+  font-weight: 700;
+  font-size: 2em;
+  display: block;
+  color: $blue;
+  padding-right: 15px;
+  &:hover{
+    color: white;
+  }
+}
+%bind-next-label {
+  display: block;
+  float: right;
+  margin-right: 5px;
+}
+%bind-prev-label {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}

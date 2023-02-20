@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300; }
+  @media screen and (max-width: 767px) {
+    .wrapper {
+      height: auto;
+      position: static; } }
+
+.navigation {
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #dcdcdc;
+  border-right: 3px solid #3f3f3f; }
+  @media screen and (max-width: 767px) {
+    .navigation {
+      width: 100%;
+      border-right: none; } }
+  .navigation .title {
+    font-weight: 500;
+    font-size: 35px;
+    padding: 15px; }
+    @media screen and (max-width: 991px) {
+      .navigation .title {
+        font-size: 25px;
+        padding: 10px; } }
+    @media screen and (max-width: 767px) {
+      .navigation .title {
+        text-align: center; } }
+    @media screen and (max-width: 479px) {
+      .navigation .title {
+        font-size: 20px; } }
+  .navigation .navigation__item {
+    font-weight: 400;
+    font-size: 25px;
+    padding: 15px;
+    border-top: 1px solid #3f3f3f; }
+    @media screen and (max-width: 767px) {
+      .navigation .navigation__item {
+        text-align: center; } }
+    @media screen and (max-width: 479px) {
+      .navigation .navigation__item {
+        font-size: 18px; } }
+    .navigation .navigation__item .navigation__link {
+      color: black; }
+      .navigation .navigation__item .navigation__link:hover {
+        color: #3f3f3f; }
+      .navigation .navigation__item .navigation__link:active {
+        text-decoration: underline; }
+
+.content__container {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  overflow-y: scroll; }
+  @media screen and (max-width: 767px) {
+    .content__container {
+      width: 100%;
+      height: auto;
+      top: auto;
+      right: auto; } }
+  .content__container .title__property {
+    font-weight: 600;
+    font-size: 27px;
+    padding-bottom: 15px; }
+    @media screen and (max-width: 479px) {
+      .content__container .title__property {
+        font-size: 20px;
+        padding-bottom: 10px; } }
+  .content__container .title__option {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 15px; }
+    @media screen and (max-width: 479px) {
+      .content__container .title__option {
+        font-size: 18px;
+        padding-bottom: 10px; } }
+  .content__container .item__definition {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5; }
+    .content__container .item__definition span {
+      padding: 2px;
+      color: #990000;
+      background-color: rgba(222, 222, 222, 0.3); }
+  .content__container .syntax__container {
+    display: flex; }
+  .content__container .item__syntax {
+    font-weight: 200;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #3f3f3f; }
+  .content__container table {
+    border: 1px solid #dcdcdc;
+    /* граница всей таблицы */
+    margin-bottom: 15px; }
+    .content__container table .table__tr:nth-child(even) {
+      background-color: #dcdcdc; }
+    .content__container table .table__value {
+      padding: 10px; }
+    .content__container table th {
+      text-align: start;
+      padding-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,53 @@
+//instruction
+.instruction {
+  background-color: lighten($blue, 35%);
+
+  .instruction__container {
+    padding: 95px 20px;
+    @include laptop {
+      padding: 70px 20px;
+    }
+    @include tablet {
+      padding: 50px 20px;
+    }
+
+    .instruction__title {
+      padding-bottom: 91px;
+      color: $blue;
+      font-weight: 700;
+      font-size: 26px;
+      text-align: center;
+      @include laptop {
+        padding-bottom: 70px;
+      }
+      @include tablet {
+        padding-bottom: 50px;
+      }
+    }
+
+    .instruction__items {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      justify-content: space-around;
+      @include phone {
+        grid-template-columns: repeat(1, auto);
+      }
+
+      .instruction__item {
+        display: grid;
+        justify-items: center;
+        padding: 35px;
+        text-align: center;
+
+        .item-instruction__title {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        & img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

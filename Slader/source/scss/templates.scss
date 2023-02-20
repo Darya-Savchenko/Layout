@@ -1,0 +1,25 @@
+%bind-next-button {
+  line-height: 50px;
+  font-size: 2em;
+  display: block;
+  color: #777;
+  content: "〉";
+  padding-left: 18px;
+}
+%bind-prev-button {
+  line-height: 50px;
+  font-size: 2em;
+  display: block;
+  color: #777;
+  content: "〈";
+}
+%bind-next-label {
+  display: block;
+  float: right;
+  margin-right: 5px;
+}
+%bind-prev-label {
+  display: block;
+  float: left;
+  margin-left: 5px;
+}

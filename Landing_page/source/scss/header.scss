@@ -1,0 +1,40 @@
+//header
+.header {
+  background: lighten($blue, 35%);
+
+  .header__container {
+    padding: 45px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include tablet {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .header__logo {
+      color: $blue;
+      font-weight: 700;
+      font-size: 40px;
+      padding-right: 10px;
+      @include phone {
+        font-size: 35px;
+      }
+    }
+
+    .menu__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 25px;
+
+      .menu__link {
+        font-size: 18px;
+
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+}

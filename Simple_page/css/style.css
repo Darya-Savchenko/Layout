@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,200&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+html,
+body {
+    height: 100%;
+    min-width: 320px;
+}
+body{
+    background-color: #f0f0f0;
+    line-height: 1.5;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 200;
+    color: #000000;
+}
+/*---------------------------------------------------------------*/
+
+.wrapper{
+    margin: 20px;
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-weight: 500;
+    text-align: center;
+    line-height: 2;
+}
+span{
+    font-weight: 500;
+}
+.page {
+    flex: 1 1 auto;
+}
+/*---------------------------------------------------------------*/
+
+.description__content{
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #b4b4b4;
+    border-radius: 3px;
+}
+/*---------------------------------------------------------------*/
+
+.portrait__container{
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #b4b4b4;
+    border-radius: 3px;
+}
+.portraits__photo{
+    margin-top: 5px;
+    overflow: hidden;
+    width: 60%;
+    height: 60%;
+    border-radius: 70%;
+}
+.portrait__description{
+    padding: 5px;
+}
+.portrait__description{
+    margin: 2px;
+    background-color: #b4b4b4;
+}
+/*---------------------------------------------------------------*/
+
+.timeLine__title{
+    text-align: start;
+}
+.timeLine__listing{
+    padding-left: 40px;
+}
+/*---------------------------------------------------------------*/
+
+.footer__content{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-style: italic;
+    text-align: center;
+}
+.footer__link:hover{
+    color: #b4b4b4;
+}
+
+
+

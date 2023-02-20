@@ -1,0 +1,298 @@
+//import
+@import "nullStyle.scss";
+@import "variables";
+@import "mixins";
+@import "templates";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+//global
+.title{
+  line-height: 1.5;
+  font-size: 25px;
+  color: $green;
+  font-weight: 600;
+  @include laptop {
+    font-size: 23px;
+  }
+  @include tablet {
+    font-size: 21px;
+  }
+  @include phone {
+    font-size: 19px;
+  }
+  @include smallPhone {
+    font-size: 17px;
+  }
+}
+.container{
+  margin-top: 20px;
+  @include phone {
+    margin: 10px;
+  }
+}
+
+//body
+html,
+body {
+  background-color: $turquoise;
+  height: 100%;
+  font-family: Poppins;
+  .wrapper {
+    border-radius: 20px;
+    background-color: $lightgrey;
+    margin: 40px;
+    @include tablet {
+          margin: 35px;
+    }
+    @include phone {
+      margin: 30px;
+    }
+    @include smallPhone {
+      margin: 25px;
+    }
+  }
+}
+
+//position
+.form__combination{
+  display: flex;
+  justify-content: center;
+  @include tablet{
+    flex-direction: column;
+    align-items: center;
+  }
+  input:first-of-type {
+    margin-right: 20px;
+    @include laptop {
+      margin-right: 10px;
+    }
+  }
+}
+
+//header
+.header {
+  background-color: $gainsboro;
+  border-bottom: 1px solid $darkgrey;
+  border-radius: 20px 20px 0 0;
+}
+.header__container {
+  border-radius: 10px;
+}
+.header__title {
+  padding: 25px;
+  border-radius: 10px;
+  color: $darkgrey;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+  @include laptop{
+    padding: 23px;
+    font-size: 42px;
+  }
+  @include tablet {
+    padding: 20px;
+    font-size: 39px;
+  }
+  @include phone {
+    padding: 17px;
+    font-size: 30px;
+  }
+  @include smallPhone {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
+
+//input
+.form__input{
+  @extend %input;
+  @extend %smallWidth;
+}
+
+//email
+.email__input {
+  @extend %input;
+  @extend %bigWidth;
+}
+
+//gender
+.gender__container {
+  @extend %smallWidth;
+  margin-right: 20px;
+  @include tablet {
+    margin-right: 0;
+  }
+  .gender__election {
+    display: flex;
+    flex-direction: row;
+  }
+  .gender__female {
+    @extend %text;
+    padding-left: 20px;
+  }
+  .gender__male {
+    @extend %text
+  }
+}
+
+//hobbies
+.hobbies__container {
+  @extend %smallWidth;
+  @include phone {
+    width: 250px;
+  }
+  @include smallPhone {
+    width: 100%;
+  }
+  .hobbies__election {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .hobbies__checkpoint {
+    @extend %text;
+    padding-right: 10px;
+  }
+}
+
+//source
+.source__select {
+  @extend %smallWidth;
+  @extend %input;
+  @extend %text;
+}
+
+//income
+.income__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  @include laptop {
+    padding-left: 20px;
+  }
+  @include tablet {
+    padding-left: 0;
+  }
+  .income__rangeMax {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .income__max {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: $green;
+    font-size: 20px;
+    width: 65px;
+    color: $lightgrey;
+    font-weight: 600;
+    @include tablet {
+      font-size: 17px;
+      width: 60px;
+    }
+    @include phone {
+      padding: 12px;
+      font-size: 16px;
+      width: 55px;
+    }
+  }
+  .income__range {
+    -webkit-appearance: none;
+    border: 1px solid $darkgrey;
+    height: 10px;
+    background: -webkit-linear-gradient(left, $darkgrey 0%, darken($lightgrey, 6.25) 0%);
+    border-radius: 10px;
+    width: 315px;
+    @include laptop {
+      width: 250px;
+    }
+    @include phone {
+      width: 200px;
+    }
+    @include smallPhone {
+      width: 100%;
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      background-color: $lightgrey;
+      border-radius: 20px;
+      border: 1px solid $darkgrey;
+      cursor: pointer;
+    }
+  }
+}
+
+//picture
+.picture__container {
+  @extend %smallWidth;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include phone {
+    width: 200px;
+  }
+  @include smallPhone{
+    width: 150px;
+  }
+  .picture__content {
+    @extend %text;
+  }
+}
+
+//bio
+.bio__container {
+  margin-bottom: 25px;
+  .bio__content {
+    @extend %bigWidth;
+    @extend %input;
+    height: 100px;
+  }
+}
+
+//bottom
+.bottom__container {
+  border-radius: 0 0 20px 20px;
+  text-align: end;
+  background-color: $gainsboro;
+  border-top: 1px solid $darkgrey;
+  .bottom {
+    padding: 10px 15px 10px 15px;
+    margin: 15px 50px;
+    color: $lightgrey;
+    background-color: $green;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    &:hover {
+      background-color: darken($green, 6.25%);
+    }
+    &:active {
+      background-color: darken($green, 12.5%);
+    }
+    @include laptop {
+        margin: 13px 47px;
+        font-size: 22px;
+    }
+    @include tablet {
+        margin: 10px 44px;
+        font-size: 20px;
+    }
+    @include phone {
+        margin: 8px 41px;
+        font-size: 18px;
+    }
+    @include smallPhone {
+        margin: 6px 38px;
+        font-size: 16px;
+    }
+  }
+}
+
+
+
+
+
+
+
